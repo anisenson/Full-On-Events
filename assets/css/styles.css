@@ -204,90 +204,30 @@ section {
 }
 
 
-/* Contact Section */
-.contact {
-    background-color: var(--light-bg);
+
+
+/* contact */
+
+.contact-div .contact-div2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+
+.contact-div h3 {
+    
 }
 
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+.social-icon {
+    width: 40px; 
+    height: 40px; 
+    background-color: #D4AF37; 
+    transition: all 0.3s ease;
 }
 
-.contact-item {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contact-item i {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    margin: 0 10px;
-    font-size: 1.2rem;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-}
-
-.contact-form {
-    background-color: var(--secondary-color);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: var(--accent-color);
-    outline: none;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 150px;
+.social-icon:hover {
+    background-color: #000 !important;
+    color: white !important;
 }
 
 /* Footer */
@@ -374,6 +314,12 @@ section {
 .back-to-top.show {
     opacity: 1;
     visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 1px solid white;
 }
 
 /* Media Queries */
