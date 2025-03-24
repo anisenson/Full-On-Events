@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     // Add fade-in class to elements that should animate
-    document.querySelectorAll('.section-title, .service-card, .gallery-item, .about-content > div, .contact-item').forEach(item => {
+    document.querySelectorAll('.section-title, .gallery-item, .about-content > div, .contact-item').forEach(item => {
         item.classList.add('fade-in');
     });
     

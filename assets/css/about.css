@@ -1,0 +1,21 @@
+
+
+/* About Section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.about-text h3 {
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+}
