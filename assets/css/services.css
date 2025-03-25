@@ -1,6 +1,7 @@
 /* Services Section */
 .services {
     background-color: var(--light-bg);
+    padding: 50px 0; /* Add padding for spacing */
 }
 
 .services-grid {
@@ -15,9 +16,13 @@
     padding: 30px;
     text-align: center;
     box-shadow: var(--box-shadow);
+    transition: var(--transition);
 }
 
-
+.service-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    cursor: pointer;
+}
 
 .service-icon {
     font-size: 3rem;
@@ -27,6 +32,11 @@
 
 .service-card h3 {
     margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #333;
 }
 
 /* Partners Section */
@@ -55,4 +65,80 @@
 .partner:hover img {
     filter: grayscale(0);
     opacity: 1;
+}
+
+/* Service Details Section (New Section) */
+#service-details {
+    display: none;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#service-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+#service-details h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#service-details p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Modal styles (If you decide to use a modal later) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#modal-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Active card border style */
+.service-card.active {
+    border: 2px solid black; 
+   
 }

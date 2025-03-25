@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/services.css">
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -38,74 +39,142 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link ">Home</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="services.html" class="nav-link active" >Services</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
                 <li><a href="gallery.html" class="nav-link ">Gallery</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-  
-<section id="services" class="services mt-5">
-    <div class="container">
-        <div class="section-title">
-            <h2>Our Services</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="services-grid">
-            <div class="service-card card-hover">
-                <div class="service-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <h3>Bar/Bat Mitzvahs</h3>
-                <p>We create meaningful and joyous celebrations that honor tradition while incorporating modern
-                    touches to make this milestone truly special.</p>
-            </div>
-            <div class="service-card card-hover">
-                <div class="service-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <h3>Weddings</h3>
-                <p>From intimate gatherings to grand celebrations, we curate every detail to create a wedding day
-                    that perfectly reflects your love story.</p>
-            </div>
-            <div class="service-card card-hover">
-                <div class="service-icon">
-                    <i class="fas fa-birthday-cake"></i>
-                </div>
-                <h3>Sweet 16s</h3>
-                <p>We design vibrant and trendy celebrations that capture the spirit of youth while creating
-                    memories that will last a lifetime.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="partners" class="partners">
-    <div class="container">
-        <div class="section-title">
-            <h2>Our Partners</h2>
-            <div class="underline"></div>
+
+
+
+
+    <!--Services section-->
+    <section id="services" class="services mt-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <div class="underline"></div>
+                <h6 style="font-family: 'Montserrat', sans-serif; font-weight: normal; margin-top: 1rem;">
+                    <i>Click on each to learn more!</i>
+                </h6>
+            </div>
+            <div class="services-grid">
+                <!-- Each service card -->
+                <div class="service-card card-hover" data-images='[
+                "https://picsum.photos/600/400?random=1", 
+                "https://picsum.photos/600/400?random=2", 
+                "https://picsum.photos/600/400?random=3"]' data-title="Bar/Bat Mitzvahs"
+                    data-custom-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam quis architecto cupiditate, temporibus quos voluptatibus veniam nobis soluta. Quidem!">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Bar/Bat Mitzvahs</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat repudiandae quo!</p>
+                </div>
+                <div class="service-card card-hover" data-images='[
+                "https://picsum.photos/600/400?random=4", 
+                "https://picsum.photos/600/400?random=5", 
+                "https://picsum.photos/600/400?random=6"]' data-title="Weddings"
+                    data-custom-desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat. Deserunt deleniti eligendi, quae delectus error accusamus ratione consectetur cupiditate?">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Weddings</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam consectetur laudantium?</p>
+                </div>
+                <div class="service-card card-hover" data-images='[
+                "https://picsum.photos/600/400?random=7", 
+                "https://picsum.photos/600/400?random=8", 
+                "https://picsum.photos/600/400?random=9"]' data-title="Sweet 16s"
+                    data-custom-desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolorum obcaecati reprehenderit numquam omnis ex necessitatibus atque, sequi quia quod?">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Sweet 16s</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatem porro ex!</p>
+                </div>
+            </div>
         </div>
-        <div class="partners-slider">
-            <div class="partner">
-                <img src="https://picsum.photos/200/100?random=2" alt="Partner 1">
+    </section>
+
+    <!-- Service Details Section with Bootstrap Carousel -->
+    <section id="service-details" class="mt-5"
+        style="height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="container">
+            <h2 id="service-title"></h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-10">
+                    <!-- Bootstrap Carousel -->
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-3 shadow-lg" id="carousel-inner">
+                            <!-- Images will be inserted here dynamically -->
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="partner">
-                <img src="https://picsum.photos/200/100?random=3" alt="Partner 2">
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-10">
+                    <!-- Custom Description -->
+                    <p id="service-custom-description" class="mt-4"></p>
+
+                    <!-- Close Button -->
+                    <button id="close-service-details" class="btn btn-danger">Close</button>
+                </div>
             </div>
-            <div class="partner">
-                <img src="https://picsum.photos/200/100?random=4" alt="Partner 3">
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Partners</h2>
+                <div class="underline"></div>
             </div>
-            <div class="partner">
-                <img src="https://picsum.photos/200/100?random=5" alt="Partner 4">
-            </div>
-            <div class="partner">
-                <img src="https://picsum.photos/200/100?random=6" alt="Partner 5">
+            <div class="partners-slider">
+                <div class="partner">
+                    <img src="https://picsum.photos/200/100?random=2" alt="Partner 1">
+                </div>
+                <div class="partner">
+                    <img src="https://picsum.photos/200/100?random=3" alt="Partner 2">
+                </div>
+                <div class="partner">
+                    <img src="https://picsum.photos/200/100?random=4" alt="Partner 3">
+                </div>
+                <div class="partner">
+                    <img src="https://picsum.photos/200/100?random=5" alt="Partner 4">
+                </div>
+                <div class="partner">
+                    <img src="https://picsum.photos/200/100?random=6" alt="Partner 5">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -211,6 +280,7 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="script2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
