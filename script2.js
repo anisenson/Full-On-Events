@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     // When a service card is clicked
     $(".service-card").click(function () {
         // Remove 'active' class from all service cards
@@ -31,6 +32,9 @@ $(document).ready(function () {
         // Show the service details section
         $("#service-details").fadeIn();
 
+        // Show the close button
+        $("#close-service-details").fadeIn();
+
         // Scroll to the service details section with an offset for the sticky navbar
         $('html, body').animate({
             scrollTop: $("#service-details").offset().top - $("nav").outerHeight() // Subtract the navbar height
@@ -41,6 +45,9 @@ $(document).ready(function () {
     $("#close-service-details").click(function () {
         // Hide the service details section
         $("#service-details").fadeOut();
+
+        // Hide the close button
+        $(this).fadeOut();
 
         // Remove the active class from the currently active service card
         $(".service-card").removeClass("active");

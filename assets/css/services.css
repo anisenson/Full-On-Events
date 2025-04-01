@@ -142,3 +142,12 @@
     border: 2px solid black; 
    
 }
+
+
+#close-service-details {
+    display: none;
+}
+
+#service-details {
+    display: none;  
+}
