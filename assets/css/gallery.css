@@ -82,3 +82,19 @@
     margin-bottom: 0.5rem;
     color: var(--accent-color);
 }
+
+/* Gallery Item Animation */
+.gallery-item {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.gallery-item.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.gallery-item.hidden {
+    display: block; /* Ensure it's part of the layout even if not visible */
+}

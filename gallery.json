@@ -1,0 +1,38 @@
+[
+    {
+        "category": "wedding",
+        "image": "https://picsum.photos/400/300?random=7",
+        "title": "Elegant Wedding",
+        "date": "Summer 2024"
+    },
+    {
+        "category": "mitzvah",
+        "image": "https://picsum.photos/400/300?random=8",
+        "title": "David's Bar Mitzvah",
+        "date": "Fall 2023"
+    },
+    {
+        "category": "sweet16",
+        "image": "https://picsum.photos/400/300?random=9",
+        "title": "Emma's Sweet 16",
+        "date": "Spring 2024"
+    },
+    {
+        "category": "wedding",
+        "image": "https://picsum.photos/400/300?random=10",
+        "title": "Garden Wedding",
+        "date": "Summer 2023"
+    },
+    {
+        "category": "mitzvah",
+        "image": "https://picsum.photos/400/300?random=11",
+        "title": "Sarah's Bat Mitzvah",
+        "date": "Winter 2024"
+    },
+    {
+        "category": "sweet16",
+        "image": "https://picsum.photos/400/300?random=12",
+        "title": "Sophia's Sweet 16",
+        "date": "Fall 2024"
+    }
+]

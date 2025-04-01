@@ -45,76 +45,22 @@
         </div>
     </nav>
 
-<section id="gallery" class="gallery mt-5">
-    <div class="container">
-        <div class="section-title">
-            <h2>Event Gallery</h2>
-            <div class="underline"></div>
+    <section id="gallery" class="gallery mt-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Event Gallery</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="mitzvah">Bar/Bat Mitzvahs</button>
+                <button class="filter-btn" data-filter="sweet16">Sweet 16s</button>
+            </div>
+            <div class="gallery-grid"></div> <!-- The gallery items will be injected here by JS -->
         </div>
-        <div class="gallery-filter">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="wedding">Weddings</button>
-            <button class="filter-btn" data-filter="mitzvah">Bar/Bat Mitzvahs</button>
-            <button class="filter-btn" data-filter="sweet16">Sweet 16s</button>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item wedding">
-                <img src="https://picsum.photos/400/300?random=7" alt="Wedding Event">
-                <div class="gallery-overlay">
-                    <div class="gallery-info">
-                        <h3>Elegant Wedding</h3>
-                        <p>Summer 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item mitzvah">
-                <img src="https://picsum.photos/400/300?random=8" alt="Bar Mitzvah Event">
-                <div class="gallery-overlay">
-                    <div class="gallery-info">
-                        <h3>David's Bar Mitzvah</h3>
-                        <p>Fall 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item sweet16">
-                <img src="https://picsum.photos/400/300?random=9" alt="Sweet 16 Event">
-                <div class="gallery-overlay">
-                    <div class="gallery-info">
-                        <h3>Emma's Sweet 16</h3>
-                        <p>Spring 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item wedding">
-                <img src="https://picsum.photos/400/300?random=10" alt="Wedding Event">
-                <div class="gallery-overlay">
-                    <div class="gallery-info">
-                        <h3>Garden Wedding</h3>
-                        <p>Summer 2023</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item mitzvah">
-                <img src="https://picsum.photos/400/300?random=11" alt="Bat Mitzvah Event">
-                <div class="gallery-overlay">
-                    <div class="gallery-info">
-                        <h3>Sarah's Bat Mitzvah</h3>
-                        <p>Winter 2024</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item sweet16">
-                <img src="https://picsum.photos/400/300?random=12" alt="Sweet 16 Event">
-                <div class="gallery-overlay">
-                    <div class="gallery-info">
-                        <h3>Sophia's Sweet 16</h3>
-                        <p>Fall 2024</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+    
 
 
 
@@ -220,6 +166,7 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
