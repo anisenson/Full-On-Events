@@ -51,5 +51,9 @@ $(document).ready(function () {
 
         // Remove the active class from the currently active service card
         $(".service-card").removeClass("active");
+
+        // Scroll to the top of the page
+        $("html, body").animate({ scrollTop: 0 }, "slow"); // Smooth scroll to the top
     });
+
 });
