@@ -122,25 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call it once on load
     animateOnScroll();
     
-    // Partner slider animation (simple version)
-    let partnerSlideIndex = 0;
-    const partners = document.querySelectorAll('.partner');
-    
-    function rotatePartners() {
-        partners.forEach((partner, index) => {
-            partner.style.opacity = '0';
-            
-            setTimeout(() => {
-                partner.style.opacity = '1';
-            }, index * 200);
-        });
-        
-        partnerSlideIndex = (partnerSlideIndex + 1) % partners.length;
-    }
-    
-    // Rotate partners every 5 seconds
-    setInterval(rotatePartners, 5000);
-    rotatePartners(); // Call once on load
     
     // Add CSS for fade-in animation (should be in CSS file, added here for completeness)
     const style = document.createElement('style');

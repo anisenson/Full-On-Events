@@ -39,33 +39,6 @@
     color: #333;
 }
 
-/* Partners Section */
-.partners-slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-}
-
-.partner {
-    flex: 0 0 calc(20% - 30px);
-    margin: 0 15px 30px;
-    transition: var(--transition);
-}
-
-.partner img {
-    width: 100%;
-    height: auto;
-    filter: grayscale(1);
-    opacity: 0.7;
-    transition: var(--transition);
-}
-
-.partner:hover img {
-    filter: grayscale(0);
-    opacity: 1;
-}
 
 /* Service Details Section (New Section) */
 #service-details {
@@ -150,4 +123,88 @@
 
 #service-details {
     display: none;  
+}
+
+
+/* Partners Section */
+
+/* Partners Section */
+.partners {
+    background-color: var(--light-bg); /* Optional: same background color as other sections */
+    padding: 50px 0;
+}
+
+.partners .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partners .underline {
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 20px auto;
+}
+
+/* Partner Cards */
+.partner-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.partner-card:hover {
+    transform: translateY(-10px);
+}
+
+.partner-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.partner-info {
+    padding: 20px;
+}
+
+.partner-info h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.partner-info p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.partner-info a {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: var(--transition);
+}
+
+.partner-info a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Hover effect on partner image */
+.partner-card:hover .partner-img {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.partner-card .partner-info p {
+    color: var(--primary-color);
 }
