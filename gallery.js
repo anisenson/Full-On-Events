@@ -23,12 +23,14 @@ function displayGalleryItems(filter) {
         const galleryItem = document.createElement('div');
         galleryItem.classList.add('gallery-item', item.category, 'hidden');
         galleryItem.innerHTML = `
-            <img src="${item.image}" alt="${item.title}">
-            <div class="gallery-overlay">
-                <div class="gallery-info">
-                    <h3>${item.title}</h3>
-                    <p>${item.date}</p>
-                    <button class="btn btn-primary modal-btn" data-id="${item.title}">More Info</button>
+            <img src="${item.image}" alt="${item.title}" class="img-fluid">
+            <div class="col-sm-12">
+                <div class="gallery-overlay">
+                    <div class="gallery-info">
+                        <h3>${item.title}</h3>
+                        <p>${item.date}</p>
+                        <button class="btn btn-primary modal-btn" data-id="${item.title}">More Info</button>
+                    </div>
                 </div>
             </div>
         `;
@@ -67,9 +69,46 @@ galleryGrid.addEventListener('click', function(e) {
         const item = galleryItems.find(galleryItem => galleryItem.title === itemId);
 
         document.getElementById('modalTitle').textContent = item.title;
-        document.getElementById('modalDescription').textContent = `Date: ${item.date}`; // You can add more info here
 
-        modal.style.display = 'flex'; // Show the modal
+        // Get the modal elements
+        const carouselIndicators = document.getElementById('carouselIndicators');
+        const carouselItems = document.getElementById('carouselItems');
+
+        // Reset carousel
+        carouselIndicators.innerHTML = '';
+        carouselItems.innerHTML = '';
+
+        // Add carousel items and indicators based on the images
+        item.images.forEach((image, index) => {
+            // Create carousel indicators
+            const indicator = document.createElement('button');
+            indicator.setAttribute('type', 'button');
+            indicator.setAttribute('data-bs-target', '#carouselExample');
+            indicator.setAttribute('data-bs-slide-to', index);
+            indicator.classList.add('indicator-btn');
+            if (index === 0) {
+                indicator.classList.add('active');
+            }
+            carouselIndicators.appendChild(indicator);
+
+            // Create carousel items
+            const carouselItem = document.createElement('div');
+            carouselItem.classList.add('carousel-item');
+            if (index === 0) {
+                carouselItem.classList.add('active');
+            }
+
+            const img = document.createElement('img');
+            img.src = image; // Use the image URL
+            img.classList.add('d-block', 'w-100');
+            img.alt = `${item.title} Image ${index + 1}`;
+
+            carouselItem.appendChild(img);
+            carouselItems.appendChild(carouselItem);
+        });
+
+        // Show the modal
+        modal.style.display = 'flex'; 
     }
 });
 

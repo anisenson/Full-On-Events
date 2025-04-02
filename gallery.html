@@ -45,6 +45,7 @@
         </div>
     </nav>
 
+    <!--Gallery-->
     <section id="gallery" class="gallery mt-5">
         <div class="container">
             <div class="section-title">
@@ -57,19 +58,39 @@
                 <button class="filter-btn" data-filter="mitzvah">Bar/Bat Mitzvahs</button>
                 <button class="filter-btn" data-filter="sweet16">Sweet 16s</button>
             </div>
-            <div class="gallery-grid"></div> <!-- The gallery items will be injected here by JS -->
+            <div class="gallery-grid">
+                <div class="row justify-content-center">
+                    <!-- The gallery items will be injected here by JS -->
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Modal -->
+   <!-- Modal -->
     <div class="modal" id="galleryModal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-            <!-- Add more content here if needed -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel Indicators (dynamically created) -->
+                <div id="carouselIndicators" class="carousel-indicators"></div>
+                
+                <!-- Carousel Items (dynamically created) -->
+                <div id="carouselItems" class="carousel-inner rounded-3 shadow-lg"></div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </div>
+
 
 
 
