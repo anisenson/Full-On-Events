@@ -1,11 +1,6 @@
-
-
 /* About Section */
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+    display: block; /* Removed grid layout as we're using Bootstrap grid */
 }
 
 .about-image img {
