@@ -148,14 +148,14 @@ section {
 }
 
 .logo img {
-    height: 60px;
+    height: 55px;
     width: auto;
     transition: var(--transition);
     display: block;
 }
 
 .navbar.scrolled .logo img {
-    height: 55px;
+    height: 50px;
 }
 
 .nav-menu {
