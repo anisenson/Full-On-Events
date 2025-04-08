@@ -3,63 +3,45 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('https://picsum.photos/1200/800');
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     color: var(--secondary-color);
     overflow: hidden;
 }
 
-.hero::before {
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+    z-index: -1;
+}
+
+.hero-background.active {
+    opacity: 1;
+}
+
+/* Optional: Add a dark overlay to improve text visibility */
+.hero::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
 }
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    font-weight: 700;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-    opacity: 0.9;
-}
-
-.btn-primary {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* Intro Section */
 .intro {

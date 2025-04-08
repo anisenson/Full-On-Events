@@ -151,5 +151,60 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     document.head.appendChild(style);
 });
+ 
 
+// Array of image URLs
+const images = [
+    'assets/images/landing-bg/landingbg-1.jpeg', // Initial Image
+    'assets/images/landing-bg/landingbg-2.jpeg', // Image 1
+    'assets/images/landing-bg/landingbg-3.jpeg', // Image 2
+    'assets/images/landing-bg/landingbg-4.jpeg', // Image 3
+    'assets/images/landing-bg/landingbg-5.jpeg',  // Image 4
+    'assets/images/landing-bg/landingbg-6.jpeg'  // Image 5
+];
 
+// Set up two background elements for crossfade
+function setupHeroBackgrounds() {
+    const heroSection = document.querySelector('.hero');
+    
+    // Create two background elements
+    const bg1 = document.createElement('div');
+    bg1.className = 'hero-background active';
+    
+    const bg2 = document.createElement('div');
+    bg2.className = 'hero-background';
+    
+    // Add to hero section
+    heroSection.prepend(bg2);
+    heroSection.prepend(bg1);
+    
+    // Set initial background
+    bg1.style.backgroundImage = `url('${images[0]}')`;
+    
+    return { bg1, bg2 };
+}
+
+// Initialize backgrounds
+const { bg1, bg2 } = setupHeroBackgrounds();
+let currentImageIndex = 0;
+let activeBg = bg1;
+let inactiveBg = bg2;
+
+// Function to transition between images
+function changeBackgroundImage() {
+    // Update index for next image
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    
+    // Set the new background image on the inactive element
+    inactiveBg.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+    
+    // Start transition
+    activeBg.classList.remove('active');
+    inactiveBg.classList.add('active');
+    
+    // Swap active and inactive references
+    [activeBg, inactiveBg] = [inactiveBg, activeBg];
+}
+
+// Start transitioning every 5 seconds
+setInterval(changeBackgroundImage, 5000);
