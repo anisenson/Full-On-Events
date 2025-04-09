@@ -207,4 +207,4 @@ function changeBackgroundImage() {
 }
 
 // Start transitioning every 5 seconds
-setInterval(changeBackgroundImage, 5000);
+setInterval(changeBackgroundImage, 4000);
