@@ -1,51 +1,61 @@
 [
     {
-        "category": "wedding",
-        "image": "https://picsum.photos/400/300?random=7",
-        "title": "Elegant Wedding",
-        "date": "Summer 2024",
+        "category": "XXX",
+        "image": "assets/images/gallery/Rovell Party/Rovell-2.jpeg",
+        "title": "title1",
+        "date": "date1",
         "images": [
-            "https://picsum.photos/600/400?random=1",
-            "https://picsum.photos/600/400?random=2",
-            "https://picsum.photos/600/400?random=3"
+            "assets/images/gallery/Rovell Party/Rovell-2.jpeg",
+            "assets/images/gallery/Rovell Party/Rovell-1.jpeg",
+            "assets/images/gallery/Rovell Party/Rovell-3.jpeg",
+            "assets/images/gallery/Rovell Party/Rovell-4.jpeg",
+            "assets/images/gallery/Rovell Party/Rovell-5.JPG",
+            "assets/images/gallery/Rovell Party/Rovell-6.JPG",
+            "assets/images/gallery/Rovell Party/Rovell-7.JPG",
+            "assets/images/gallery/Rovell Party/Rovell-8.jpeg",
+            "assets/images/gallery/Rovell Party/Rovell-9.jpeg"        
         ]
     },
     {
-        "category": "mitzvah",
-        "image": "https://picsum.photos/400/300?random=8",
-        "title": "David's Bar Mitzvah",
-        "date": "Fall 2023",
+        "category": "XXX",
+        "image": "assets/images/gallery/Levitt Party/Levitt-6.jpg",
+        "title": "title2",
+        "date": "date2",
         "images": [
-            "https://picsum.photos/600/400?random=4",
-            "https://picsum.photos/600/400?random=5",
-            "https://picsum.photos/600/400?random=6"
+            "assets/images/gallery/Levitt Party/Levitt-6.jpg",
+            "assets/images/gallery/Levitt Party/Levitt-1.jpg",
+            "assets/images/gallery/Levitt Party/Levitt-2.jpg",
+            "assets/images/gallery/Levitt Party/Levitt-4.jpg",
+            "assets/images/gallery/Levitt Party/Levitt-5.jpg",
+            "assets/images/gallery/Levitt Party/Levitt-3.jpg",
+            "assets/images/gallery/Levitt Party/Levitt-7.jpg"
         ]
     },
     {
-        "category": "wedding",
-        "image": "https://picsum.photos/400/300?random=7",
-        "title": "Test Wedding",
-        "date": "Summer 2024",
+        "category": "XXX",
+        "image": "assets/images/gallery/Banks Party/Banks-7.jpg",
+        "title": "title3",
+        "date": "date3",
         "images": [
-            "https://picsum.photos/600/400?random=1",
-            "https://picsum.photos/600/400?random=2",
-            "https://picsum.photos/600/400?random=3",
-            "https://picsum.photos/600/400?random=4", 
-            "https://picsum.photos/600/400?random=5"
+            "assets/images/gallery/Banks Party/Banks-7.jpg",
+            "assets/images/gallery/Banks Party/Banks-2.jpg",
+            "assets/images/gallery/Banks Party/Banks-1.jpg",
+            "assets/images/gallery/Banks Party/Banks-4.jpg", 
+            "assets/images/gallery/Banks Party/Banks-5.jpg",
+            "assets/images/gallery/Banks Party/Banks-6.jpg", 
+            "assets/images/gallery/Banks Party/Banks-3.jpg"
         ]
     },
     {
-        "category": "mitzvah",
-        "image": "https://picsum.photos/400/300?random=7",
-        "title": "Test mitzvah",
-        "date": "Summer 2024",
+        "category": "XXX",
+        "image": "assets/images/gallery/Ast Party/Ast-1.jpeg",
+        "title": "title4",
+        "date": "date4",
         "images": [
-            "https://picsum.photos/600/400?random=1",
-            "https://picsum.photos/600/400?random=2",
-            "https://picsum.photos/600/400?random=3",
-            "https://picsum.photos/600/400?random=4", 
-            "https://picsum.photos/600/400?random=5",
-            "https://picsum.photos/600/400?random=6"
+            "assets/images/gallery/Ast Party/Ast-1.jpeg",
+            "assets/images/gallery/Ast Party/Ast-2.jpeg",
+            "assets/images/gallery/Ast Party/Ast-3.jpeg",
+            "assets/images/gallery/Ast Party/Ast-4.jpeg"
         ]
     }
     

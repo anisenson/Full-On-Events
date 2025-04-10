@@ -100,7 +100,7 @@ galleryGrid.addEventListener('click', function(e) {
 
             const img = document.createElement('img');
             img.src = image; // Use the image URL
-            img.classList.add('d-block', 'w-100');
+            img.classList.add('d-block', 'w-100', 'modal-img');
             img.alt = `${item.title} Image ${index + 1}`;
 
             carouselItem.appendChild(img);
