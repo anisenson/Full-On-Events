@@ -29,7 +29,7 @@ function displayGalleryItems(filter) {
                     <div class="gallery-info">
                         <h3>${item.title}</h3>
                         <p>${item.date}</p>
-                        <button class="btn btn-primary modal-btn" data-id="${item.title}">More Info</button>
+                        <button class="btn btn-primary modal-btn" data-id="${item.title}">View More</button>
                     </div>
                 </div>
             </div>
