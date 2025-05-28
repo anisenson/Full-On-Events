@@ -1,13 +1,12 @@
 [
     {
-        "category": "XXX",
+        "category": "mitzvah",
         "image": "assets/images/gallery/Rovell Party/Rovell-2.jpeg",
-        "title": "title1",
-        "date": "date1",
+        "title": "Harper's Bat Mitzvah",
+        "date": "March 2025",
         "images": [
             "assets/images/gallery/Rovell Party/Rovell-2.jpeg",
             "assets/images/gallery/Rovell Party/Rovell-1.jpeg",
-            "assets/images/gallery/Rovell Party/Rovell-3.jpeg",
             "assets/images/gallery/Rovell Party/Rovell-4.jpeg",
             "assets/images/gallery/Rovell Party/Rovell-5.JPG",
             "assets/images/gallery/Rovell Party/Rovell-6.JPG",
@@ -17,10 +16,10 @@
         ]
     },
     {
-        "category": "XXX",
+        "category": "mitzvah",
         "image": "assets/images/gallery/Levitt Party/Levitt-6.jpg",
-        "title": "title2",
-        "date": "date2",
+        "title": "Luke's Bar Mitzvah",
+        "date": "March 2025",
         "images": [
             "assets/images/gallery/Levitt Party/Levitt-6.jpg",
             "assets/images/gallery/Levitt Party/Levitt-1.jpg",
@@ -32,10 +31,10 @@
         ]
     },
     {
-        "category": "XXX",
+        "category": "mitzvah",
         "image": "assets/images/gallery/Banks Party/Banks-7.jpg",
-        "title": "title3",
-        "date": "date3",
+        "title": "Ava's Bat Mitzvah",
+        "date": "Feburary 2025",
         "images": [
             "assets/images/gallery/Banks Party/Banks-7.jpg",
             "assets/images/gallery/Banks Party/Banks-2.jpg",
@@ -47,16 +46,83 @@
         ]
     },
     {
-        "category": "XXX",
+        "category": "mitzvah",
         "image": "assets/images/gallery/Ast Party/Ast-1.jpeg",
-        "title": "title4",
-        "date": "date4",
+        "title": "Brody's Bar Mitzvah",
+        "date": "March 2025",
         "images": [
             "assets/images/gallery/Ast Party/Ast-1.jpeg",
             "assets/images/gallery/Ast Party/Ast-2.jpeg",
             "assets/images/gallery/Ast Party/Ast-3.jpeg",
             "assets/images/gallery/Ast Party/Ast-4.jpeg"
         ]
+    },
+    {
+        "category": "sweet16",
+        "image": "assets/images/gallery/Addison-Sweet/Addison-1.PNG",
+        "title": "Addison's Sweet 16",
+        "date": "January 2023",
+        "images": [
+            "assets/images/gallery/Addison-Sweet/Addison-2.PNG",
+            "assets/images/gallery/Addison-Sweet/Addison-3.PNG",
+            "assets/images/gallery/Addison-Sweet/Addison-4.PNG",
+            "assets/images/gallery/Addison-Sweet/Addison-1.PNG"
+        ]
+    },
+    {
+        "category": "wedding",
+        "image": "assets/images/gallery/Carl-Wedding/Carl-4.PNG",
+        "title": "Jessica and Carl's Wedding",
+        "date": "June 2023",
+        "images": [
+            "assets/images/gallery/Carl-Wedding/Carl-1.PNG",
+            "assets/images/gallery/Carl-Wedding/Carl-2.PNG",
+            "assets/images/gallery/Carl-Wedding/Carl-3.PNG",
+            "assets/images/gallery/Carl-Wedding/Carl-4.PNG"
+
+        ]
+    },
+    {
+        "category": "wedding",
+        "image": "assets/images/gallery/Wedding-2/Wedding-2-1.PNG",
+        "title": "Nikki and Denver's Wedding",
+        "date": "June 2023",
+        "images": [
+            "assets/images/gallery/Wedding-2/Wedding-2-2.PNG",
+            "assets/images/gallery/Wedding-2/Wedding-2-3.PNG",
+            "assets/images/gallery/Wedding-2/Wedding-2-4.PNG",
+            "assets/images/gallery/Wedding-2/Wedding-2-5.PNG",
+            "assets/images/gallery/Wedding-2/Wedding-2-6.PNG",
+            "assets/images/gallery/Wedding-2/Wedding-2-1.PNG"
+
+
+        ]
+    },
+    {
+        "category": "mitzvah",
+        "image": "assets/images/gallery/Cohen-Mitzvah/Cohen-1.PNG",
+        "title": "Alex's Bar Mitzvah",
+        "date": "August 2022",
+        "images": [
+            "assets/images/gallery/Cohen-Mitzvah/Cohen-2.PNG",
+            "assets/images/gallery/Cohen-Mitzvah/Cohen-3.PNG",
+            "assets/images/gallery/Cohen-Mitzvah/Cohen-4.PNG",
+            "assets/images/gallery/Cohen-Mitzvah/Cohen-5.PNG",
+            "assets/images/gallery/Cohen-Mitzvah/Cohen-6.PNG",
+            "assets/images/gallery/Cohen-Mitzvah/Cohen-7.PNG",
+            "assets/images/gallery/Cohen-Mitzvah/Cohen-1.PNG"       
+        ]
+    },
+    {
+        "category": "sweet16",
+        "image": "assets/images/gallery/Sweet-16/Sweet-16-1.PNG",
+        "title": "Sweet 16",
+        "date": "March 2023",
+        "images": [
+            "assets/images/gallery/Sweet-16/Sweet-16-2.PNG",
+            "assets/images/gallery/Sweet-16/Sweet-16-3.PNG",
+            "assets/images/gallery/Sweet-16/Sweet-16-1.PNG"   
+        ]
     }
-    
+
 ]
